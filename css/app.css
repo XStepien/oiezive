@@ -1,19 +1,30 @@
-@import url('https://fonts.googleapis.com/css?family=Megrim');
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC');
+@import url('https://fonts.googleapis.com/css?family=Wire+One');
 
 html, body {
-    font-size: 14px;
+    font-family: Wire One;
+    font-size: 34px;
     padding: 0;
     margin: 0;
     color: #0a0a0a;
 }
-
-h1, h2 {
+body  {
+    position: relative;
+    min-height: 100%;
+    padding-bottom: 84px;
+}
+h1, h2, h3 {
     font-family: 'Megrim', cursive;
+    font-family: Amatic SC;
+}
+
+h2 {
+    font-size: 2em;
 }
 
 #header {
-    position: static;
-    background: url(../images/creampaper.png) fixed;
+    position: relative;
+    background: url(../images/paper.png) fixed;
     width: 100%;
     height: 100vh;
     box-shadow:
@@ -41,10 +52,17 @@ h1, h2 {
     width: 1%;
 }
 #header-nav ul li a {
+    font-family: Amatic SC;
+    font-size: 1.2em;
     color: #0a0a0a;
     text-decoration: none;
     text-transform: uppercase;
-    font-size: 1em;
+}
+
+#header-nav ul li a:hover,
+#header-nav ul li a.active {
+    color: #ff9f22;
+    font-weight: bold;
 }
 
 section {
@@ -56,24 +74,27 @@ section h2 {
 }
 
 #aPropos {
-
+    background-color: #ff9f22;
 }
 #mesTravaux {
-    background: url(../images/creampaper.png) fixed;
+    background: url(../images/paper.png) fixed;
     box-shadow:
             inset 0 11px 8px -10px #CCC,
             inset 0 -11px 8px -10px #CCC;
 }
-#mesTravaux .thumbnail {
+.thumbnail {
     position: relative;
     overflow: hidden;
-    border-radius: 50%;
+    border-radius: 25%;
     vertical-align: middle;
     border: 0;
+    width: 250px;
+    height: 250px;
 }
-#mesTravaux .thumbnail span {
+.thumbnail span {
     position: absolute;
-    border-radius: 50%;
+    border-radius: 25%;
+    text-transform: uppercase;
     top: 0;
     left: 0;
     right: 0;
@@ -82,22 +103,72 @@ section h2 {
     transition: all ease 0.5s;
     opacity: 0;
 }
-#mesTravaux .thumbnail:hover {
+.thumbnail:hover {
     box-shadow: 0 0 6px 1px rgba(0, 0, 0, 0.5);
 }
-#mesTravaux .thumbnail:hover span{
+.thumbnail:hover span{
     display: block;
     background-color: rgba(0,0,0,0.5);
-    color: #fff;
-    font-size: 2.5em;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #ff9f22;
     opacity: 1;
+}
+#contact {
+    background-color: #ff9f22;
+}
+#contact input,
+#contact textarea {
+    padding: 10px;
+    height: auto;
 }
 #contact .button{
     display: block;
+    font-family: Amatic SC;
+    color: #0a0a0a;
+    background: none;
+    font-size: 1.5em;
     width: 100%;
 }
+#contact .button:hover {
+    font-weight: bold;
+}
 #footer {
-    padding: 40px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    color: #ff9f22;
+    padding: 20px 0 10px 0;
     background-color: #0a0a0a;
-    color: #f1f1f1;
+}
+#footer p {
+    margin: 0;
+}
+
+#page-mesTravaux .menu li {
+    padding: 20px
+}
+#page-mesTravaux .menu li a {
+    color: #0a0a0a;
+}
+#page-mesTravaux .menu li a:hover,
+#page-mesTravaux .menu li a.selected {
+    font-weight: bold;
+}
+
+#includedContent {
+    /*display: none;*/
+}
+.card {
+    background: none;
+    border: none;
+}
+.card .card-section h4 {
+    font-size: 1em;
+}
+.card .card-section p {
+    font-size: 1em;
+    line-height: 1em;
 }

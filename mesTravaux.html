@@ -5,21 +5,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mes travaux - L'oiezive</title>
     <link rel="stylesheet" href="vendor/css/foundation.css">
+    <link href="vendor/css/lightbox.css" rel="stylesheet">
     <link rel="stylesheet" href="css/app.css">
+
+    <style>
+        body,section {
+            background-color: #ff9f22;
+        }
+    </style>
 </head>
-<body>
+<body id="page-mesTravaux">
     <header id="header" class="small-header">
         <nav id="header-nav">
             <ul>
                 <li><a href="index.html">Accueil</a></li>
                 <li><a href="aPropos.html">A propos</a></li>
-                <li class="active"><a href="mesTravaux.html">Mes travaux</a></li>
+                <li><a href="mesTravaux.html" class="active">Mes travaux</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
     <section>
         <h1 class="page-title">Mes travaux</h1>
+
+        <div class="row">
+            <div class="medium-12 columns">
+                <div class="menu-centered">
+                    <ul id="menuTravaux" class="menu">
+                        <li><a href="#" data-categorie="edition" class="selected">éditions</a></li>
+                        <li><a href="#" data-categorie="identite">identités visuelles</a></li>
+                        <li><a href="#" data-categorie="illustration">illustration</a></li>
+                        <li><a href="#" data-categorie="animation">animation</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="includedContent" class="row small-up-1 medium-up-4">
+        </div>
     </section>
+
+    <footer id="footer">
+        <p>le footer</p>
+    </footer>
+
+    <script type="text/javascript">document.write('<script src="//localhost:35729/livereload.js?snipver=1" type="text/javascript"><\/script>')</script>
+
+    <script src="vendor/js/jquery.js"></script>
+    <script src="vendor/js/what-input.js"></script>
+    <script src="vendor/js/foundation.js"></script>
+    <script src="vendor/js/lightbox.js"></script>
+    <script src="js/app.js"></script>
 </body>
 </html>
