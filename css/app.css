@@ -85,15 +85,15 @@ section h2 {
 .thumbnail {
     position: relative;
     overflow: hidden;
-    border-radius: 25%;
+    border-radius: 50%;
     vertical-align: middle;
     border: 0;
     width: 250px;
     height: 250px;
 }
-.thumbnail span {
+a.thumbnail span {
     position: absolute;
-    border-radius: 25%;
+    border-radius: 50%;
     text-transform: uppercase;
     top: 0;
     left: 0;
@@ -103,10 +103,10 @@ section h2 {
     transition: all ease 0.5s;
     opacity: 0;
 }
-.thumbnail:hover {
-    box-shadow: 0 0 6px 1px rgba(0, 0, 0, 0.5);
+a.thumbnail:hover {
+    box-shadow: 0 0 6px 1px rgba(255, 159, 34, 0.5);
 }
-.thumbnail:hover span{
+a.thumbnail:hover span{
     display: block;
     background-color: rgba(0,0,0,0.5);
     font-size: 1.5em;
