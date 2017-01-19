@@ -16,11 +16,9 @@ $(function() {
         $( 'a.selected' ).toggleClass('selected');
         $('a[data-categorie="'+categorie+'"]').toggleClass('selected');
 
-        container.fadeOut('slow', function () {
-            container.load(categorie+".html", function () {
-                container.fadeIn('slow');
-            });
-        })
+        container.load(categorie+".html", function () {
+            container.fadeIn('slow');
+        });
     } else {
         container.load("edition.html");
     }

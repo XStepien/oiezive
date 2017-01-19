@@ -8,9 +8,9 @@ gulp.task('css', function() {
 });
 
 gulp.task('image', function () {
-    gulp.src('./images/**/*')
+    gulp.src('./img/**/*')
         .pipe(image())
-        .pipe(gulp.dest('./img'));
+        .pipe(gulp.dest('./images'));
 });
 
 gulp.task('watch', function() {
