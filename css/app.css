@@ -59,6 +59,12 @@ h2 {
     text-transform: uppercase;
 }
 
+@media screen and (max-width: 39.9375em) {
+    #header-nav ul li a {
+        font-size: 0.8em;
+    }
+}
+
 #header-nav ul li a:hover,
 #header-nav ul li a.active {
     color: #ff9f22;
@@ -158,14 +164,27 @@ a.thumbnail:hover span{
     font-weight: bold;
 }
 
+@media screen and (max-width: 39.9375em) {
+    #page-mesTravaux .menu li {
+        padding: 5px;
+        margin-bottom: 15px;
+    }
+    #page-mesTravaux .menu li a {
+        font-size: 0.5em;
+        padding: 0;
+    }
+}
+
 #includedContent {
-    /*display: none;*/
+   min-height: 200px;
 }
 .card {
+    font-family: "Wire One";
     background: none;
     border: none;
 }
 .card .card-section h4 {
+    font-family: "Amatic SC";
     font-size: 1em;
 }
 .card .card-section p {
